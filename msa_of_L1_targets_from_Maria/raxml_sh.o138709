@@ -1,0 +1,7 @@
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+ERROR: Taxon Name "HPV16-6695C,6721A" is invalid at position 11, it contains illegal character ,
+Illegal characters in taxon-names are: tabulators, carriage returns, spaces, ":", ",", ")", "(", ";", "]", "[", "'" 
+Exiting
