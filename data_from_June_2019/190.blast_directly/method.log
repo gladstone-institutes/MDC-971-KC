@@ -1,0 +1,1 @@
+for i in *.sam; do samtools view -f 64 -F 256 $i | awk -F '\t' '{print $3}' | sort | uniq -c | sort -nr | awk -v OFS='\t' -v var="${i/_cutadapt.sam/}" '{print var, $1, $2}'; done > counts.txt

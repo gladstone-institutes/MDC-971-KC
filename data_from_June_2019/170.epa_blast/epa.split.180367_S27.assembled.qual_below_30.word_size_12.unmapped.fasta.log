@@ -1,0 +1,26 @@
+INFO Selected: Output dir: /data/projects/mdc-971/data_from_June_2019/170.epa_blast/
+INFO Selected: Query file: /data/projects/mdc-971/data_from_June_2019/170.epa_blast/epa.split.180367_S27.assembled.qual_below_30.word_size_12.unmapped.fasta
+INFO Selected: Tree file: /data/projects/mdc-971/msa_of_L1_targets_from_Maria/RAxML_bestTree.hpv_ref_tree
+INFO Selected: Reference MSA: /data/projects/mdc-971/msa_of_L1_targets_from_Maria/Target_seqs_from_Maria.aligned.fa
+INFO Selected: Automatic switching of use of per rate scalers
+INFO Selected: Preserving the root of the input tree
+INFO Selected: Specified model file: /data/projects/mdc-971/msa_of_L1_targets_from_Maria/RAxML_info.hpv_ref_tree
+INFO    Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.711347 (user),  weights&rates: (0.25,0.0766135) (0.25,0.368835) (0.25,0.929002) (0.25,2.62555) 
+        Base frequencies (user): 0.372559 0.175716 0.165012 0.286713 
+        Substitution rates (user): 6.14912 8.67416 2.428 6.13306 10.5564 1
+INFO     ______ ____   ___           _   __ ______
+        / ____// __ \ /   |         / | / // ____/
+       / __/  / /_/ // /| | ______ /  |/ // / __  
+      / /___ / ____// ___ |/_____// /|  // /_/ /  
+     /_____//_/    /_/  |_|      /_/ |_/ \____/ (v0.3.4)
+INFO Output file: /data/projects/mdc-971/data_from_June_2019/170.epa_blast/epa_result.jplace
+INFO 5000 Sequences done!
+INFO 10000 Sequences done!
+INFO 15000 Sequences done!
+INFO 20000 Sequences done!
+INFO 25000 Sequences done!
+INFO 30000 Sequences done!
+INFO 35000 Sequences done!
+INFO 39867 Sequences done!
+INFO Time spent placing: 68s
+INFO Elapsed Time: 68s

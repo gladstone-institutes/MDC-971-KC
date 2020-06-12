@@ -1,0 +1,2 @@
+~/softwares/ncbi-magicblast-1.5.0/bin/makeblastdb -in Target_seqs_from_Maria_and_HBB.fa -dbtype nucl -parse_seqids -out HBB_and_L1_targets -title "Targeted regions in HBB and L1 genes"
+

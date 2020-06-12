@@ -1,0 +1,63 @@
+INFO Selected: Output dir: /data/projects/mdc-971/data_from_June_2019/110.epa_placements/
+INFO Selected: Query file: /data/projects/mdc-971/data_from_June_2019/110.epa_placements/epa.split.180336_S2.fasta
+INFO Selected: Tree file: /data/projects/mdc-971/msa_of_L1_targets_400nt/RAxML_bestTree.hpv_ref_tree
+INFO Selected: Reference MSA: /data/projects/mdc-971/msa_of_L1_targets_400nt/Targets_aligned.fa
+INFO Selected: Automatic switching of use of per rate scalers
+INFO Selected: Preserving the root of the input tree
+INFO Selected: Specified model file: /data/projects/mdc-971/msa_of_L1_targets_400nt/RAxML_info.hpv_ref_tree
+INFO    Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.568792 (user),  weights&rates: (0.25,0.046742) (0.25,0.294473) (0.25,0.864522) (0.25,2.79426) 
+        Base frequencies (user): 0.310786 0.186525 0.1907 0.311988 
+        Substitution rates (user): 4.63917 7.91646 2.84877 3.49916 8.7319 1
+INFO     ______ ____   ___           _   __ ______
+        / ____// __ \ /   |         / | / // ____/
+       / __/  / /_/ // /| | ______ /  |/ // / __  
+      / /___ / ____// ___ |/_____// /|  // /_/ /  
+     /_____//_/    /_/  |_|      /_/ |_/ \____/ (v0.3.4)
+INFO Output file: /data/projects/mdc-971/data_from_June_2019/110.epa_placements/epa_result.jplace
+INFO 5000 Sequences done!
+INFO 10000 Sequences done!
+INFO 15000 Sequences done!
+INFO 20000 Sequences done!
+INFO 25000 Sequences done!
+INFO 30000 Sequences done!
+INFO 35000 Sequences done!
+INFO 40000 Sequences done!
+INFO 45000 Sequences done!
+INFO 50000 Sequences done!
+INFO 55000 Sequences done!
+INFO 60000 Sequences done!
+INFO 65000 Sequences done!
+INFO 70000 Sequences done!
+INFO 75000 Sequences done!
+INFO 80000 Sequences done!
+INFO 85000 Sequences done!
+INFO 90000 Sequences done!
+INFO 95000 Sequences done!
+INFO 100000 Sequences done!
+INFO 105000 Sequences done!
+INFO 110000 Sequences done!
+INFO 115000 Sequences done!
+INFO 120000 Sequences done!
+INFO 125000 Sequences done!
+INFO 130000 Sequences done!
+INFO 135000 Sequences done!
+INFO 140000 Sequences done!
+INFO 145000 Sequences done!
+INFO 150000 Sequences done!
+INFO 155000 Sequences done!
+INFO 160000 Sequences done!
+INFO 165000 Sequences done!
+INFO 170000 Sequences done!
+INFO 175000 Sequences done!
+INFO 180000 Sequences done!
+INFO 185000 Sequences done!
+INFO 190000 Sequences done!
+INFO 195000 Sequences done!
+INFO 200000 Sequences done!
+INFO 205000 Sequences done!
+INFO 210000 Sequences done!
+INFO 215000 Sequences done!
+INFO 220000 Sequences done!
+INFO 224311 Sequences done!
+INFO Time spent placing: 1411s
+INFO Elapsed Time: 1413s

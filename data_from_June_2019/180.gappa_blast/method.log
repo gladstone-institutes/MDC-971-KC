@@ -1,0 +1,1 @@
+for i in *.profile.tsv; do grep "HPV" $i | awk -v var="$i" '{print var, $0}' >> all.gappa.results.txt; done

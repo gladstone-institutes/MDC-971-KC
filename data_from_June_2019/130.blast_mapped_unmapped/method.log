@@ -1,0 +1,3 @@
+To convert SAM to fasta
+
+awk '{print ">", $1, "\n", $10}' SiHa_S96.assembled.qual_above_35.word_size_12.mapped.sam | sed 's/ //g' | less

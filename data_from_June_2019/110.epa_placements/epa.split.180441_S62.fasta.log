@@ -1,0 +1,19 @@
+INFO Selected: Output dir: /data/projects/mdc-971/data_from_June_2019/110.epa_placements/
+INFO Selected: Query file: /data/projects/mdc-971/data_from_June_2019/110.epa_placements/epa.split.180441_S62.fasta
+INFO Selected: Tree file: /data/projects/mdc-971/msa_of_L1_targets_400nt/RAxML_bestTree.hpv_ref_tree
+INFO Selected: Reference MSA: /data/projects/mdc-971/msa_of_L1_targets_400nt/Targets_aligned.fa
+INFO Selected: Automatic switching of use of per rate scalers
+INFO Selected: Preserving the root of the input tree
+INFO Selected: Specified model file: /data/projects/mdc-971/msa_of_L1_targets_400nt/RAxML_info.hpv_ref_tree
+INFO    Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.568792 (user),  weights&rates: (0.25,0.046742) (0.25,0.294473) (0.25,0.864522) (0.25,2.79426) 
+        Base frequencies (user): 0.310786 0.186525 0.1907 0.311988 
+        Substitution rates (user): 4.63917 7.91646 2.84877 3.49916 8.7319 1
+INFO     ______ ____   ___           _   __ ______
+        / ____// __ \ /   |         / | / // ____/
+       / __/  / /_/ // /| | ______ /  |/ // / __  
+      / /___ / ____// ___ |/_____// /|  // /_/ /  
+     /_____//_/    /_/  |_|      /_/ |_/ \____/ (v0.3.4)
+INFO Output file: /data/projects/mdc-971/data_from_June_2019/110.epa_placements/epa_result.jplace
+INFO 3939 Sequences done!
+INFO Time spent placing: 27s
+INFO Elapsed Time: 27s

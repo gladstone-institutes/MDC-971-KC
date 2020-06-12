@@ -1,0 +1,740 @@
+This is cutadapt 2.6 with Python 3.7.3
+Command line parameters: -g ACGTTGGATGTTTGTTACTATGGTAGATACCACAC -g ACGTTGGATGTTTGTTACTAAGGTAGATACCACTC -g ACGTTGGATGTTTGTTACTGTGGTGGATACTAC -g ACGTTGGATGTTTGTTACTGTTGTGGATACAAC -g ACGTTGGATGTTTGTTACCGTTGTTGATACTAC -g ACGTTGGATGAATATATGTGTGCTTATTTG -G ACGTTGGATGTTTGTTACTATGGTAGATACCACAC -G ACGTTGGATGTTTGTTACTGTGGTGGATACTAC -G ACGTTGGATGTTTGTTACTGTTGTGGATACAAC -G ACGTTGGATGTTTGTTACCGTTGTTGATACTAC -G ACGTTGGATGAATATATGTGTGCTTATTTG -G ACGTTGGATGTTTGTTACTAAGGTAGATACCACTC -g ACGTTGGATGGAAAAATAAACTGCAAATCATATTC -g ACGTTGGATGGAAAAATAAACTGTAAATCATATTC -g ACGTTGGATGGAAAAATAAATTGTAAATCATACTC -g ACGTTGGATGAGATTAGGGAAAGTATTAGA -g ACGTTGGATGGAAAAATAAATTGTAAATCAAATTC -g ACGTTGGATGGAAAAATAAACTGTAAATCATATTCCT -G ACGTTGGATGGAAAAATAAACTGCAAATCATATTC -G ACGTTGGATGAGATTAGGGAAAGTATTAGA -G ACGTTGGATGGAAAAATAAATTGTAAATCATACTC -G ACGTTGGATGGAAAAATAAACTGTAAATCATATTCCT -G ACGTTGGATGGAAAAATAAACTGTAAATCATATTC -G ACGTTGGATGGAAAAATAAATTGTAAATCAAATTC --minimum-length=1 -o /data/projects/mdc-971/reprocess_June_2019_data/analysis/30.primer_trimmed/180382_S37_cutadapt.1.fq.gz -p /data/projects/mdc-971/reprocess_June_2019_data/analysis/30.primer_trimmed/180382_S37_cutadapt.2.fq.gz /data/projects/mdc-971/reprocess_June_2019_data/analysis/20.adapter_trimmed/180382_S37_R1_001.bbduked.trimmed.fastq.gz /data/projects/mdc-971/reprocess_June_2019_data/analysis/20.adapter_trimmed/180382_S37_R2_001.bbduked.trimmed.fastq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 133.35 s (372 us/read; 0.16 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            358,401
+  Read 1 with adapter:                 327,408 (91.4%)
+  Read 2 with adapter:                 291,100 (81.2%)
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       358,401 (100.0%)
+
+Total basepairs processed:   107,436,184 bp
+  Read 1:    53,676,132 bp
+  Read 2:    53,760,052 bp
+Total written (filtered):     86,122,586 bp (80.2%)
+  Read 1:    42,347,957 bp
+  Read 2:    43,774,629 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: ACGTTGGATGTTTGTTACTATGGTAGATACCACAC; Type: regular 5'; Length: 35; Trimmed: 2385 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+5	1	350.0	0	1
+19	1	0.0	1	0 1
+25	1	0.0	2	0 1
+26	4	0.0	2	1 2 1
+27	4	0.0	2	1 2 1
+28	4	0.0	2	2 0 1 1
+29	11	0.0	2	0 6 4 1
+30	18	0.0	3	4 8 5 1
+31	6	0.0	3	2 1 2 1
+32	24	0.0	3	2 2 11 9
+33	165	0.0	3	2 5 44 114
+34	265	0.0	3	7 87 74 97
+35	1545	0.0	3	466 432 300 347
+36	158	0.0	3	0 47 47 64
+37	36	0.0	3	0 0 22 14
+38	141	0.0	3	0 0 0 141
+43	1	0.0	3	0 0 0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: ACGTTGGATGTTTGTTACTAAGGTAGATACCACTC; Type: regular 5'; Length: 35; Trimmed: 2086 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	2	5600.0	0	2
+21	1	0.0	2	1
+23	2	0.0	2	0 0 2
+26	4	0.0	2	1 2 1
+27	1	0.0	2	0 1
+28	4	0.0	2	2 0 2
+29	20	0.0	2	7 9 4
+30	51	0.0	3	28 12 9 2
+31	38	0.0	3	17 11 6 4
+32	81	0.0	3	34 24 14 9
+33	82	0.0	3	18 24 19 21
+34	239	0.0	3	17 87 61 74
+35	1471	0.0	3	672 364 231 204
+36	62	0.0	3	1 22 21 18
+37	17	0.0	3	0 0 5 12
+38	11	0.0	3	0 0 0 11
+
+
+=== First read: Adapter 3 ===
+
+Sequence: ACGTTGGATGTTTGTTACTGTGGTGGATACTAC; Type: regular 5'; Length: 33; Trimmed: 137568 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1	5600.0	0	1
+15	1	0.0	1	0 1
+17	3	0.0	1	2 1
+18	2	0.0	1	0 2
+19	3	0.0	1	3
+20	7	0.0	2	6 1
+21	7	0.0	2	4 2 1
+22	2	0.0	2	2
+23	3	0.0	2	2 1
+24	45	0.0	2	27 13 5
+25	128	0.0	2	70 43 15
+26	174	0.0	2	94 58 22
+27	393	0.0	2	266 106 21
+28	1261	0.0	2	825 330 104 2
+29	998	0.0	2	574 294 114 16
+30	2668	0.0	3	1499 821 252 96
+31	4122	0.0	3	2216 1074 549 283
+32	12545	0.0	3	3403 4826 2633 1683
+33	113273	0.0	3	65804 26899 13382 7188
+34	1657	0.0	3	24 932 490 211
+35	85	0.0	3	16 10 22 37
+36	114	0.0	3	15 3 0 96
+37	20	0.0	3	12 6 1 1
+38	3	0.0	3	1 1 0 1
+39	3	0.0	3	1 0 2
+40	3	0.0	3	1 0 1 1
+41	13	0.0	3	7 4 2
+42	4	0.0	3	2 2
+43	6	0.0	3	4 2
+44	3	0.0	3	1 2
+45	5	0.0	3	2 2 1
+46	2	0.0	3	0 1 1
+47	1	0.0	3	1
+48	1	0.0	3	1
+49	2	0.0	3	2
+50	3	0.0	3	1 0 0 2
+51	3	0.0	3	1 1 1
+54	1	0.0	3	1
+55	1	0.0	3	1
+56	1	0.0	3	1
+63	1	0.0	3	0 1
+
+
+=== First read: Adapter 4 ===
+
+Sequence: ACGTTGGATGTTTGTTACTGTTGTGGATACAAC; Type: regular 5'; Length: 33; Trimmed: 5872 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	15	5600.0	0	15
+25	8	0.0	2	4 3 1
+26	5	0.0	2	1 4
+27	3	0.0	2	3
+28	41	0.0	2	27 7 6 1
+29	21	0.0	2	7 9 3 2
+30	38	0.0	3	19 12 3 4
+31	126	0.0	3	42 29 31 24
+32	411	0.0	3	75 174 91 71
+33	4856	0.0	3	2735 1066 723 332
+34	223	0.0	3	2 106 64 51
+35	50	0.0	3	0 0 20 30
+36	73	0.0	3	0 0 0 73
+49	1	0.0	3	0 1
+53	1	0.0	3	1
+
+
+=== First read: Adapter 5 ===
+
+Sequence: ACGTTGGATGTTTGTTACCGTTGTTGATACTAC; Type: regular 5'; Length: 33; Trimmed: 3938 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	5	0.0	1	3 2
+17	1	0.0	1	0 1
+19	2	0.0	1	2
+20	1	0.0	2	0 1
+21	1	0.0	2	1
+23	1	0.0	2	0 0 1
+24	2	0.0	2	1 1
+25	9	0.0	2	6 2 1
+26	18	0.0	2	10 5 3
+27	26	0.0	2	12 10 4
+28	48	0.0	2	30 10 8
+29	44	0.0	2	15 18 9 2
+30	97	0.0	3	35 27 15 20
+31	150	0.0	3	28 49 40 33
+32	466	0.0	3	55 165 133 113
+33	2875	0.0	3	1400 880 405 190
+34	168	0.0	3	0 85 54 29
+35	16	0.0	3	0 0 6 10
+36	6	0.0	3	0 0 0 6
+44	1	0.0	3	1
+52	1	0.0	3	0 0 1
+
+
+=== First read: Adapter 6 ===
+
+Sequence: ACGTTGGATGAATATATGTGTGCTTATTTG; Type: regular 5'; Length: 30; Trimmed: 33 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	29	5600.0	0	29
+4	3	1400.0	0	3
+30	1	0.0	3	1
+
+
+=== First read: Adapter 7 ===
+
+Sequence: ACGTTGGATGGAAAAATAAACTGCAAATCATATTC; Type: regular 5'; Length: 35; Trimmed: 5336 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+21	1	0.0	2	0 0 1
+23	1	0.0	2	0 1
+24	2	0.0	2	0 1 1
+26	1	0.0	2	1
+27	1	0.0	2	1
+29	3	0.0	2	1 2
+30	12	0.0	3	5 2 2 3
+31	19	0.0	3	6 2 7 4
+32	19	0.0	3	6 1 2 10
+33	116	0.0	3	3 6 53 54
+34	449	0.0	3	8 263 87 91
+35	3583	0.0	3	1908 586 328 761
+36	1019	0.0	3	0 618 236 165
+37	47	0.0	3	0 0 25 22
+38	62	0.0	3	0 0 0 62
+45	1	0.0	3	0 0 0 1
+
+
+=== First read: Adapter 8 ===
+
+Sequence: ACGTTGGATGGAAAAATAAACTGTAAATCATATTC; Type: regular 5'; Length: 35; Trimmed: 1004 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+20	1	0.0	2	0 0 1
+24	1	0.0	2	0 1
+28	1	0.0	2	0 0 1
+29	1	0.0	2	0 1
+30	1	0.0	3	0 1
+31	3	0.0	3	0 0 2 1
+32	14	0.0	3	0 0 1 13
+33	24	0.0	3	0 1 10 13
+34	140	0.0	3	0 61 18 61
+35	689	0.0	3	80 168 122 319
+36	104	0.0	3	0 19 50 35
+37	15	0.0	3	0 0 2 13
+38	10	0.0	3	0 0 0 10
+
+
+=== First read: Adapter 9 ===
+
+Sequence: ACGTTGGATGGAAAAATAAATTGTAAATCATACTC; Type: regular 5'; Length: 35; Trimmed: 2076 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+5	1	350.0	0	1
+29	1	0.0	2	1
+30	1	0.0	3	1
+31	3	0.0	3	3
+32	5	0.0	3	1 1 1 2
+33	18	0.0	3	2 3 6 7
+34	91	0.0	3	38 25 14 14
+35	1538	0.0	3	956 332 148 102
+36	12	0.0	3	0 1 3 8
+37	26	0.0	3	0 0 5 21
+38	378	0.0	3	0 0 0 378
+52	1	0.0	3	0 0 0 1
+55	1	0.0	3	0 0 1
+
+
+=== First read: Adapter 10 ===
+
+Sequence: ACGTTGGATGAGATTAGGGAAAGTATTAGA; Type: regular 5'; Length: 30; Trimmed: 31 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	30	5600.0	0	30
+4	1	1400.0	0	1
+
+
+=== First read: Adapter 11 ===
+
+Sequence: ACGTTGGATGGAAAAATAAATTGTAAATCAAATTC; Type: regular 5'; Length: 35; Trimmed: 61027 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.1	1	0 1
+23	1	0.0	2	1
+27	1	0.0	2	1
+28	1	0.0	2	1
+29	2	0.0	2	1 0 1
+30	31	0.0	3	18 9 2 2
+31	31	0.0	3	24 6 0 1
+32	47	0.0	3	30 14 1 2
+33	156	0.0	3	83 42 17 14
+34	953	0.0	3	321 399 147 86
+35	56790	0.0	3	42677 8729 3523 1861
+36	1296	0.0	3	7 552 427 310
+37	20	0.0	3	3 1 1 15
+38	1688	0.0	3	2 0 0 1686
+39	2	0.0	3	1 0 0 1
+40	1	0.0	3	1
+43	1	0.0	3	1
+45	1	0.0	3	0 1
+47	1	0.0	3	1
+48	1	0.0	3	1
+51	1	0.0	3	0 1
+62	1	0.0	3	1
+
+
+=== First read: Adapter 12 ===
+
+Sequence: ACGTTGGATGGAAAAATAAACTGTAAATCATATTCCT; Type: regular 5'; Length: 37; Trimmed: 106052 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-37 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	12	5600.0	0	12
+4	4	1400.0	0	4
+13	1	0.0	1	0 1
+16	1	0.0	1	0 1
+19	1	0.0	1	0 1
+20	2	0.0	2	1 0 1
+22	1	0.0	2	1
+23	1	0.0	2	0 1
+25	1	0.0	2	1
+26	1	0.0	2	1
+27	1	0.0	2	1
+28	2	0.0	2	1 0 1
+29	6	0.0	2	3 2 1
+30	3	0.0	3	0 2 0 1
+31	20	0.0	3	5 8 4 3
+32	188	0.0	3	64 69 41 14
+33	180	0.0	3	58 83 31 8
+34	254	0.0	3	89 111 43 11
+35	418	0.0	3	111 110 130 67
+36	6015	0.0	3	391 3058 1749 817
+37	96622	0.0	3	46681 31554 13126 5261
+38	1194	0.0	3	21 600 415 158
+39	1001	0.0	3	2 2 281 716
+40	112	0.0	3	0 1 0 111
+41	1	0.0	3	0 1
+46	1	0.0	3	0 0 1
+47	1	0.0	3	0 1
+48	1	0.0	3	1
+50	1	0.0	3	1
+53	1	0.0	3	1
+54	2	0.0	3	2
+64	3	0.0	3	3
+
+
+=== Second read: Adapter 13 ===
+
+Sequence: ACGTTGGATGTTTGTTACTATGGTAGATACCACAC; Type: regular 5'; Length: 35; Trimmed: 2180 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	14	5600.0	0	14
+4	20	1400.0	0	20
+18	1	0.0	1	0 1
+19	1	0.0	1	0 1
+28	2	0.0	2	0 2
+29	2	0.0	2	0 1 1
+30	6	0.0	3	0 4 1 1
+31	5	0.0	3	0 1 1 3
+32	8	0.0	3	0 1 2 5
+33	365	0.0	3	0 6 96 263
+34	214	0.0	3	1 56 53 104
+35	1166	0.0	3	190 350 323 303
+36	250	0.0	3	0 27 56 167
+37	64	0.0	3	0 0 11 53
+38	60	0.0	3	0 0 0 60
+48	1	0.0	3	0 0 1
+54	1	0.0	3	0 0 0 1
+
+
+=== Second read: Adapter 14 ===
+
+Sequence: ACGTTGGATGTTTGTTACTGTGGTGGATACTAC; Type: regular 5'; Length: 33; Trimmed: 137168 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	10	5600.0	0	10
+16	2	0.0	1	0 2
+19	2	0.0	1	0 2
+20	1	0.0	2	1
+24	8	0.0	2	3 5
+25	16	0.0	2	3 5 8
+26	54	0.0	2	21 24 9
+27	79	0.0	2	45 20 14
+28	161	0.0	2	74 54 32 1
+29	321	0.0	2	99 134 82 6
+30	833	0.0	3	205 266 162 200
+31	1909	0.0	3	716 385 423 385
+32	15005	0.0	3	697 5758 4842 3708
+33	116831	0.0	3	58748 32788 16596 8699
+34	1189	0.0	3	9 524 419 237
+35	113	0.0	3	12 7 48 46
+36	221	0.0	3	7 5 0 209
+37	9	0.0	3	4 3 2
+38	7	0.0	3	3 3 1
+39	3	0.0	3	0 0 0 3
+40	20	0.0	3	8 7 4 1
+41	92	0.0	3	28 41 10 13
+42	53	0.0	3	19 15 13 6
+43	13	0.0	3	2 5 4 2
+44	31	0.0	3	13 10 6 2
+45	33	0.0	3	12 11 6 4
+46	21	0.0	3	10 5 2 4
+47	12	0.0	3	3 6 2 1
+48	18	0.0	3	13 3 2
+49	10	0.0	3	6 2 1 1
+50	15	0.0	3	8 2 5
+51	20	0.0	3	6 6 5 3
+52	15	0.0	3	6 3 4 2
+53	12	0.0	3	7 2 2 1
+54	8	0.0	3	3 0 3 2
+55	5	0.0	3	2 0 3
+56	9	0.0	3	5 2 0 2
+57	4	0.0	3	2 2
+58	3	0.0	3	1 1 1
+
+
+=== Second read: Adapter 15 ===
+
+Sequence: ACGTTGGATGTTTGTTACTGTTGTGGATACAAC; Type: regular 5'; Length: 33; Trimmed: 7503 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	570	5600.0	0	570
+27	2	0.0	2	1 0 1
+28	2	0.0	2	1 1
+29	6	0.0	2	1 5
+30	23	0.0	3	8 5 6 4
+31	119	0.0	3	10 8 42 59
+32	975	0.0	3	13 409 338 215
+33	5062	0.0	3	2400 1282 853 527
+34	362	0.0	3	0 100 109 153
+35	66	0.0	3	0 1 30 35
+36	252	0.0	3	0 0 0 252
+40	4	0.0	3	1 2 1
+41	15	0.0	3	5 8 1 1
+42	9	0.0	3	2 1 3 3
+43	1	0.0	3	0 1
+44	2	0.0	3	1 0 0 1
+45	3	0.0	3	0 0 1 2
+46	1	0.0	3	0 0 1
+47	2	0.0	3	2
+48	5	0.0	3	0 2 2 1
+50	2	0.0	3	1 1
+51	3	0.0	3	2 1
+52	5	0.0	3	2 0 3
+53	6	0.0	3	3 2 1
+54	1	0.0	3	0 1
+56	2	0.0	3	2
+57	2	0.0	3	1 0 1
+58	1	0.0	3	0 1
+
+
+=== Second read: Adapter 16 ===
+
+Sequence: ACGTTGGATGTTTGTTACCGTTGTTGATACTAC; Type: regular 5'; Length: 33; Trimmed: 4608 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+24	1	0.0	2	0 1
+25	1	0.0	2	0 1
+26	5	0.0	2	0 4 1
+27	3	0.0	2	2 1
+28	8	0.0	2	3 2 3
+29	16	0.0	2	2 4 10
+30	147	0.0	3	13 14 9 111
+31	98	0.0	3	25 16 26 31
+32	676	0.0	3	14 175 237 250
+33	3448	0.0	3	1244 1203 658 343
+34	137	0.0	3	0 41 59 37
+35	44	0.0	3	0 1 20 23
+36	11	0.0	3	0 0 0 11
+40	2	0.0	3	1 1
+41	3	0.0	3	1 1 1
+42	1	0.0	3	0 0 1
+44	1	0.0	3	0 1
+45	4	0.0	3	3 0 1
+46	1	0.0	3	1
+49	1	0.0	3	1
+
+
+=== Second read: Adapter 17 ===
+
+Sequence: ACGTTGGATGAATATATGTGTGCTTATTTG; Type: regular 5'; Length: 30; Trimmed: 159 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	146	5600.0	0	146
+4	7	1400.0	0	7
+5	5	350.0	0	5
+6	1	87.5	0	1
+
+
+=== Second read: Adapter 18 ===
+
+Sequence: ACGTTGGATGTTTGTTACTAAGGTAGATACCACTC; Type: regular 5'; Length: 35; Trimmed: 2052 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	6	5600.0	0	6
+4	8	1400.0	0	8
+25	1	0.0	2	1
+27	3	0.0	2	1 1 1
+28	2	0.0	2	1 0 1
+29	3	0.0	2	2 1
+30	9	0.0	3	4 3 2
+31	17	0.0	3	5 4 6 2
+32	24	0.0	3	4 6 12 2
+33	64	0.0	3	9 8 18 29
+34	342	0.0	3	10 52 115 165
+35	1437	0.0	3	523 380 308 226
+36	88	0.0	3	0 16 32 40
+37	33	0.0	3	1 0 4 28
+38	11	0.0	3	0 0 0 11
+42	1	0.0	3	1
+45	1	0.0	3	0 1
+47	1	0.0	3	0 1
+50	1	0.0	3	1
+
+
+=== Second read: Adapter 19 ===
+
+Sequence: ACGTTGGATGGAAAAATAAACTGCAAATCATATTC; Type: regular 5'; Length: 35; Trimmed: 4028 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	20	5600.0	0	20
+4	3	1400.0	0	3
+6	1	87.5	0	1
+12	1	0.0	1	0 1
+18	1	0.0	1	1
+19	2	0.0	1	0 2
+23	1	0.0	2	0 0 1
+25	2	0.0	2	0 0 2
+26	1	0.0	2	1
+28	1	0.0	2	0 1
+30	6	0.0	3	2 1 2 1
+31	13	0.0	3	3 2 1 7
+32	15	0.0	3	1 2 1 11
+33	39	0.0	3	0 3 16 20
+34	270	0.0	3	1 113 56 100
+35	2881	0.0	3	849 484 309 1239
+36	714	0.0	3	0 374 187 153
+37	14	0.0	3	0 0 8 6
+38	42	0.0	3	0 0 0 42
+45	1	0.0	3	0 1
+
+
+=== Second read: Adapter 20 ===
+
+Sequence: ACGTTGGATGAGATTAGGGAAAGTATTAGA; Type: regular 5'; Length: 30; Trimmed: 36 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	35	5600.0	0	35
+4	1	1400.0	0	1
+
+
+=== Second read: Adapter 21 ===
+
+Sequence: ACGTTGGATGGAAAAATAAATTGTAAATCATACTC; Type: regular 5'; Length: 35; Trimmed: 2013 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+5	1	350.0	0	1
+11	1	0.1	1	1
+12	1	0.0	1	1
+13	1	0.0	1	1
+14	2	0.0	1	2
+18	6	0.0	1	4 2
+19	5	0.0	1	3 2
+20	1	0.0	2	0 0 1
+21	4	0.0	2	2 1 1
+24	1	0.0	2	1
+25	1	0.0	2	1
+26	7	0.0	2	3 1 3
+27	1	0.0	2	0 1
+29	3	0.0	2	0 1 2
+30	7	0.0	3	3 2 2
+31	5	0.0	3	2 1 2
+32	4	0.0	3	2 0 0 2
+33	22	0.0	3	1 0 4 17
+34	56	0.0	3	9 15 15 17
+35	1665	0.0	3	701 396 259 309
+36	15	0.0	3	1 1 1 12
+37	5	0.0	3	0 0 3 2
+38	195	0.0	3	0 0 0 195
+43	2	0.0	3	2
+44	1	0.0	3	1
+54	1	0.0	3	1
+
+
+=== Second read: Adapter 22 ===
+
+Sequence: ACGTTGGATGGAAAAATAAACTGTAAATCATATTCCT; Type: regular 5'; Length: 37; Trimmed: 77995 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-37 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	224	5600.0	0	224
+4	252	1400.0	0	252
+5	1	350.0	0	1
+12	2	0.0	1	0 2
+13	1	0.0	1	0 1
+14	2	0.0	1	0 2
+19	1	0.0	1	0 1
+20	3	0.0	2	0 1 2
+26	1	0.0	2	0 0 1
+27	1	0.0	2	0 1
+29	1	0.0	2	0 0 1
+30	3	0.0	3	0 3
+31	9	0.0	3	1 4 3 1
+32	25	0.0	3	7 7 9 2
+33	55	0.0	3	12 21 12 10
+34	65	0.0	3	18 19 13 15
+35	215	0.0	3	43 53 66 53
+36	3208	0.0	3	81 1361 1060 706
+37	72641	0.0	3	23825 26129 14728 7959
+38	669	0.0	3	3 211 274 181
+39	480	0.0	3	6 3 162 309
+40	103	0.0	3	1 0 0 102
+44	2	0.0	3	0 1 0 1
+45	6	0.0	3	1 0 4 1
+46	5	0.0	3	1 0 3 1
+47	2	0.0	3	1 1
+48	1	0.0	3	1
+49	3	0.0	3	1 2
+50	3	0.0	3	0 3
+51	6	0.0	3	2 2 2
+52	1	0.0	3	1
+55	2	0.0	3	1 1
+61	1	0.0	3	0 1
+76	1	0.0	3	0 0 1
+
+
+=== Second read: Adapter 23 ===
+
+Sequence: ACGTTGGATGGAAAAATAAACTGTAAATCATATTC; Type: regular 5'; Length: 35; Trimmed: 925 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+14	1	0.0	1	1
+15	1	0.0	1	0 1
+19	1	0.0	1	0 1
+22	2	0.0	2	1 0 1
+30	3	0.0	3	2 1
+31	2	0.0	3	0 1 0 1
+32	6	0.0	3	0 0 0 6
+33	20	0.0	3	0 1 9 10
+34	87	0.0	3	0 9 9 69
+35	724	0.0	3	59 115 89 461
+36	67	0.0	3	0 4 28 35
+37	1	0.0	3	0 0 0 1
+38	8	0.0	3	0 0 0 8
+49	1	0.0	3	0 0 0 1
+
+
+=== Second read: Adapter 24 ===
+
+Sequence: ACGTTGGATGGAAAAATAAATTGTAAATCAAATTC; Type: regular 5'; Length: 35; Trimmed: 52433 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-35 bp: 3
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+5	1	350.0	0	1
+6	2	87.5	0	2
+14	1	0.0	1	1
+18	3	0.0	1	2 1
+21	2	0.0	2	1 0 1
+22	3	0.0	2	1 2
+30	9	0.0	3	4 1 3 1
+31	22	0.0	3	7 7 5 3
+32	18	0.0	3	8 4 2 4
+33	74	0.0	3	31 18 12 13
+34	638	0.0	3	77 255 165 141
+35	49817	0.0	3	29003 11210 5915 3689
+36	1146	0.0	3	10 454 381 301
+37	9	0.0	3	1 1 3 4
+38	675	0.0	3	0 0 0 675
+43	1	0.0	3	1
+44	4	0.0	3	3 1
+45	1	0.0	3	0 1
+47	2	0.0	3	1 0 1
+48	2	0.0	3	1 1
+51	1	0.0	3	0 1
+52	1	0.0	3	1
+53	1	0.0	3	0 1

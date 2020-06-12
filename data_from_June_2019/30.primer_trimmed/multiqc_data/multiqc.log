@@ -1,0 +1,287 @@
+[2019-08-06 17:11:06,016] multiqc                                            [DEBUG  ]  No MultiQC config found: /data/home/kchoudha/miniconda3/envs/kc_env/lib/python3.5/site-packages/multiqc_config.yaml
+[2019-08-06 17:11:06,016] multiqc                                            [DEBUG  ]  No MultiQC config found: /data/home/kchoudha/.multiqc_config.yaml
+[2019-08-06 17:11:06,017] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2019-08-06 17:11:06,017] multiqc                                            [DEBUG  ]  Command used: /data/home/kchoudha/miniconda3/envs/kc_env/bin/multiqc .
+[2019-08-06 17:11:07,216] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.7
+[2019-08-06 17:11:07,216] multiqc                                            [INFO   ]  This is MultiQC v1.7
+[2019-08-06 17:11:07,216] multiqc                                            [DEBUG  ]  Command     : /data/home/kchoudha/miniconda3/envs/kc_env/bin/multiqc .
+[2019-08-06 17:11:07,216] multiqc                                            [DEBUG  ]  Working dir : /data/projects/mdc-971/data_from_June_2019/30.primer_trimmed
+[2019-08-06 17:11:07,217] multiqc                                            [INFO   ]  Template    : default
+[2019-08-06 17:11:07,217] multiqc                                            [INFO   ]  Searching '.'
+[2019-08-06 17:11:07,217] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, conpair, peddy, methylQA, phantompeakqualtools, qualimap, preseq, quast, qorts, rna_seqc, rsem, rseqc, busco, goleft_indexcov, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, homer, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, dedup, damageprofiler, picard, prokka, samblaster, samtools, bamtools, jellyfish, vcftools, longranger, stacks, bbmap, bismark, biscuit, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, kat, leehom, adapterRemoval, clipandmerge, cutadapt, flexbar, trimmomatic, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, minionqc, clusterflow, bcl2fastq, interop, flash
+[2019-08-06 17:11:07,217] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmp1u98ik1r
+[2019-08-06 17:11:07,622] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180335_S1_cutadapt.1.fq.gz
+[2019-08-06 17:11:07,622] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180335_S1_cutadapt.2.fq.gz
+[2019-08-06 17:11:07,682] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180336_S2_cutadapt.1.fq.gz
+[2019-08-06 17:11:07,682] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180336_S2_cutadapt.2.fq.gz
+[2019-08-06 17:11:07,740] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180338_S3_cutadapt.1.fq.gz
+[2019-08-06 17:11:07,740] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180338_S3_cutadapt.2.fq.gz
+[2019-08-06 17:11:07,792] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180339_S4_cutadapt.1.fq.gz
+[2019-08-06 17:11:07,792] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180339_S4_cutadapt.2.fq.gz
+[2019-08-06 17:11:07,850] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180340_S5_cutadapt.1.fq.gz
+[2019-08-06 17:11:07,850] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180340_S5_cutadapt.2.fq.gz
+[2019-08-06 17:11:07,909] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180342_S6_cutadapt.1.fq.gz
+[2019-08-06 17:11:07,909] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180342_S6_cutadapt.2.fq.gz
+[2019-08-06 17:11:07,974] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180343_S7_cutadapt.1.fq.gz
+[2019-08-06 17:11:07,974] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180343_S7_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,066] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180344_S8_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,067] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180344_S8_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,146] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180345_S9_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,146] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180345_S9_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,206] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180347_S10_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,207] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180347_S10_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,278] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180348_S11_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,278] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180348_S11_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,328] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180350_S12_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,328] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180350_S12_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,368] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180351_S13_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,368] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180351_S13_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,433] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180352_S14_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,434] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180352_S14_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,498] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180353_S15_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,498] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180353_S15_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,598] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180354_S16_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,598] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180354_S16_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,664] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180355_S17_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,664] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180355_S17_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,728] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180356_S18_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,728] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180356_S18_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,790] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180357_S19_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,791] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180357_S19_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,889] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180358_S20_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,889] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180358_S20_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180359_S21_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,924] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180359_S21_cutadapt.2.fq.gz
+[2019-08-06 17:11:08,973] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180361_S22_cutadapt.1.fq.gz
+[2019-08-06 17:11:08,973] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180361_S22_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,020] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180362_S23_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,020] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180362_S23_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,068] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180363_S24_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,068] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180363_S24_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,127] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180365_S25_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,128] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180365_S25_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,181] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180366_S26_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,181] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180366_S26_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,238] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180367_S27_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,238] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180367_S27_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,300] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180368_S28_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,301] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180368_S28_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,343] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180369_S29_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,343] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180369_S29_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,404] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180372_S30_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,404] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180372_S30_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,444] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180373_S31_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,444] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180373_S31_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,485] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180375_S32_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,486] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180375_S32_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,542] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180378_S34_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,542] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180378_S34_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,597] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180379_S35_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,597] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180379_S35_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,654] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180381_S36_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,654] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180381_S36_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,707] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180382_S37_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,708] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180382_S37_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,768] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180384_S38_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,768] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180384_S38_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,825] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180388_S39_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,825] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180388_S39_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,888] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180393_S40_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,888] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180393_S40_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,941] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180396_S41_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,941] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180396_S41_cutadapt.2.fq.gz
+[2019-08-06 17:11:09,989] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180397_S42_cutadapt.1.fq.gz
+[2019-08-06 17:11:09,989] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180397_S42_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,037] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180398_S43_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,037] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180398_S43_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,099] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180399_S44_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,099] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180399_S44_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,150] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180403_S45_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,150] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180403_S45_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,202] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180404_S46_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,202] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180404_S46_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,260] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180405_S47_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,260] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180405_S47_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,308] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180406_S48_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,308] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180406_S48_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,363] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180407_S49_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,363] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180407_S49_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,417] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180408_S50_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,417] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180408_S50_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,470] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180409_S51_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,470] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180409_S51_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,534] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180412_S52_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,535] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180412_S52_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,592] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180413_S53_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,593] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180413_S53_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,649] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180428_S54_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,650] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180428_S54_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,709] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180429_S55_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,710] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180429_S55_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,769] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180431_S56_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,769] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180431_S56_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,830] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180434_S57_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,830] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180434_S57_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,891] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180437_S58_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,891] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180437_S58_cutadapt.2.fq.gz
+[2019-08-06 17:11:10,958] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180438_S59_cutadapt.1.fq.gz
+[2019-08-06 17:11:10,959] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180438_S59_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,064] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180439_S60_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,064] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180439_S60_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,106] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180440_S61_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,106] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180440_S61_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,148] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180441_S62_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,148] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180441_S62_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,210] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180442_S63_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,210] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180442_S63_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,268] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180443_S64_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,268] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180443_S64_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,335] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180444_S65_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,335] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180444_S65_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,388] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180445_S67_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,389] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180445_S67_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,442] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180446_S68_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,442] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180446_S68_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,493] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180449_S69_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,494] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180449_S69_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,546] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180451_S70_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,547] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180451_S70_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,605] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180452_S71_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,605] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180452_S71_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,658] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180454_S72_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,659] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180454_S72_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,726] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180456_S73_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,727] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180456_S73_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,788] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180458_S74_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,788] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180458_S74_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,848] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180460_S75_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,848] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180460_S75_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,887] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180462_S76_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,887] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180462_S76_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,935] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180463_S77_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,935] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180463_S77_cutadapt.2.fq.gz
+[2019-08-06 17:11:11,989] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180464_S78_cutadapt.1.fq.gz
+[2019-08-06 17:11:11,989] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180464_S78_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,053] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180467_S79_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,053] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180467_S79_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,090] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180470_S80_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,091] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180470_S80_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,145] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180472_S81_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,145] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180472_S81_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,197] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180473_S82_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,197] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180473_S82_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,251] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180475_S83_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,252] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180475_S83_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,305] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180476_S84_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,305] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180476_S84_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,340] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180477_S85_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,341] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180477_S85_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,375] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180478_S86_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,376] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180478_S86_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,413] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180480_S87_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,414] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180480_S87_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,452] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180482_S88_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,452] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180482_S88_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,491] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180487_S89_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,492] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180487_S89_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,551] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180489_S90_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,551] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180489_S90_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,602] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180491_S91_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,602] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180491_S91_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,655] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180493_S92_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,656] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180493_S92_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,691] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180501_S93_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,692] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180501_S93_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,753] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180503_S94_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,753] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180503_S94_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,810] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180504_S95_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,810] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: 180504_S95_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,866] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HeLa_S33_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,867] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: HeLa_S33_cutadapt.2.fq.gz
+[2019-08-06 17:11:12,953] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: LKP31_S66_cutadapt.1.fq.gz
+[2019-08-06 17:11:12,962] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: LKP31_S66_cutadapt.2.fq.gz
+[2019-08-06 17:11:13,060] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SiHa_S96_cutadapt.1.fq.gz
+[2019-08-06 17:11:13,060] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: SiHa_S96_cutadapt.2.fq.gz
+[2019-08-06 17:11:15,682] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2019-08-06 17:11:15,720] multiqc                                            [DEBUG  ]  No samples found: conpair
+[2019-08-06 17:11:15,749] multiqc                                            [DEBUG  ]  No samples found: peddy
+[2019-08-06 17:11:15,864] multiqc                                            [DEBUG  ]  No samples found: methylQA
+[2019-08-06 17:11:15,891] multiqc                                            [DEBUG  ]  No samples found: phantompeakqualtools
+[2019-08-06 17:11:15,913] multiqc                                            [DEBUG  ]  No samples found: qualimap
+[2019-08-06 17:11:15,943] multiqc                                            [DEBUG  ]  No samples found: preseq
+[2019-08-06 17:11:15,968] multiqc                                            [DEBUG  ]  No samples found: quast
+[2019-08-06 17:11:15,990] multiqc                                            [DEBUG  ]  No samples found: qorts
+[2019-08-06 17:11:16,018] multiqc                                            [DEBUG  ]  No samples found: rna_seqc
+[2019-08-06 17:11:16,043] multiqc                                            [DEBUG  ]  No samples found: rsem
+[2019-08-06 17:11:16,130] multiqc                                            [DEBUG  ]  No samples found: rseqc
+[2019-08-06 17:11:16,140] multiqc                                            [DEBUG  ]  No samples found: busco
+[2019-08-06 17:11:16,163] multiqc                                            [DEBUG  ]  No samples found: goleft_indexcov
+[2019-08-06 17:11:16,181] multiqc                                            [DEBUG  ]  No samples found: disambiguate
+[2019-08-06 17:11:16,192] multiqc                                            [DEBUG  ]  No samples found: supernova
+[2019-08-06 17:11:16,240] multiqc                                            [DEBUG  ]  No samples found: deeptools
+[2019-08-06 17:11:16,270] multiqc                                            [DEBUG  ]  No samples found: sargasso
+[2019-08-06 17:11:16,295] multiqc                                            [DEBUG  ]  No samples found: verifybamid
+[2019-08-06 17:11:16,330] multiqc                                            [DEBUG  ]  No samples found: mirtrace
+[2019-08-06 17:11:16,368] multiqc                                            [DEBUG  ]  No samples found: happy
+[2019-08-06 17:11:16,402] multiqc                                            [DEBUG  ]  No samples found: homer
+[2019-08-06 17:11:16,413] multiqc                                            [DEBUG  ]  No samples found: macs2
+[2019-08-06 17:11:16,437] multiqc                                            [DEBUG  ]  No samples found: theta2
+[2019-08-06 17:11:16,477] multiqc                                            [DEBUG  ]  No samples found: snpeff
+[2019-08-06 17:11:16,502] multiqc                                            [DEBUG  ]  No samples found: gatk
+[2019-08-06 17:11:16,535] multiqc                                            [DEBUG  ]  No samples found: htseq
+[2019-08-06 17:11:16,559] multiqc                                            [DEBUG  ]  No samples found: bcftools
+[2019-08-06 17:11:16,601] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2019-08-06 17:11:16,619] multiqc                                            [DEBUG  ]  No samples found: dedup
+[2019-08-06 17:11:16,634] multiqc                                            [DEBUG  ]  No samples found: damageprofiler
+[2019-08-06 17:11:16,703] multiqc                                            [DEBUG  ]  No samples found: picard
+[2019-08-06 17:11:16,720] multiqc                                            [DEBUG  ]  No samples found: prokka
+[2019-08-06 17:11:16,738] multiqc                                            [DEBUG  ]  No samples found: samblaster
+[2019-08-06 17:11:16,790] multiqc                                            [DEBUG  ]  No samples found: samtools
+[2019-08-06 17:11:16,811] multiqc                                            [DEBUG  ]  No samples found: bamtools
+[2019-08-06 17:11:16,836] multiqc                                            [DEBUG  ]  No samples found: jellyfish
+[2019-08-06 17:11:16,853] multiqc                                            [DEBUG  ]  No samples found: vcftools
+[2019-08-06 17:11:16,879] multiqc                                            [DEBUG  ]  No samples found: longranger
+[2019-08-06 17:11:16,893] multiqc                                            [DEBUG  ]  No samples found: stacks
+[2019-08-06 17:11:16,981] multiqc                                            [DEBUG  ]  No samples found: bbmap
+[2019-08-06 17:11:16,991] multiqc                                            [DEBUG  ]  No samples found: bismark
+[2019-08-06 17:11:17,011] multiqc                                            [DEBUG  ]  No samples found: biscuit
+[2019-08-06 17:11:17,048] multiqc                                            [DEBUG  ]  No samples found: hicexplorer
+[2019-08-06 17:11:17,070] multiqc                                            [DEBUG  ]  No samples found: hicup
+[2019-08-06 17:11:17,130] multiqc                                            [DEBUG  ]  No samples found: hicpro
+[2019-08-06 17:11:17,161] multiqc                                            [DEBUG  ]  No samples found: salmon
+[2019-08-06 17:11:17,189] multiqc                                            [DEBUG  ]  No samples found: kallisto
+[2019-08-06 17:11:17,247] multiqc                                            [DEBUG  ]  No samples found: slamdunk
+[2019-08-06 17:11:17,267] multiqc                                            [DEBUG  ]  No samples found: star
+[2019-08-06 17:11:17,292] multiqc                                            [DEBUG  ]  No samples found: hisat2
+[2019-08-06 17:11:17,302] multiqc                                            [DEBUG  ]  No samples found: tophat
+[2019-08-06 17:11:17,313] multiqc                                            [DEBUG  ]  No samples found: bowtie2
+[2019-08-06 17:11:17,341] multiqc                                            [DEBUG  ]  No samples found: bowtie1
+[2019-08-06 17:11:17,395] multiqc                                            [DEBUG  ]  No samples found: kat
+[2019-08-06 17:11:17,404] multiqc                                            [DEBUG  ]  No samples found: leehom
+[2019-08-06 17:11:17,431] multiqc                                            [DEBUG  ]  No samples found: adapterRemoval
+[2019-08-06 17:11:17,451] multiqc                                            [DEBUG  ]  No samples found: clipandmerge
+[2019-08-06 17:11:18,445] multiqc.modules.cutadapt.cutadapt                  [INFO   ]  Found 96 reports
+[2019-08-06 17:11:39,096] multiqc                                            [DEBUG  ]  No samples found: flexbar
+[2019-08-06 17:11:39,135] multiqc                                            [DEBUG  ]  No samples found: trimmomatic
+[2019-08-06 17:11:39,149] multiqc                                            [DEBUG  ]  No samples found: skewer
+[2019-08-06 17:11:39,167] multiqc                                            [DEBUG  ]  No samples found: sortmerna
+[2019-08-06 17:11:39,177] multiqc                                            [DEBUG  ]  No samples found: biobloomtools
+[2019-08-06 17:11:39,190] multiqc                                            [DEBUG  ]  No samples found: fastq_screen
+[2019-08-06 17:11:39,218] multiqc                                            [DEBUG  ]  No samples found: afterqc
+[2019-08-06 17:11:39,234] multiqc                                            [DEBUG  ]  No samples found: fastp
+[2019-08-06 17:11:39,261] multiqc                                            [DEBUG  ]  No samples found: fastqc
+[2019-08-06 17:11:39,289] multiqc                                            [DEBUG  ]  No samples found: minionqc
+[2019-08-06 17:11:39,360] multiqc                                            [DEBUG  ]  No samples found: clusterflow
+[2019-08-06 17:11:39,374] multiqc                                            [DEBUG  ]  No samples found: bcl2fastq
+[2019-08-06 17:11:39,406] multiqc                                            [DEBUG  ]  No samples found: interop
+[2019-08-06 17:11:39,420] multiqc                                            [DEBUG  ]  No samples found: flash
+[2019-08-06 17:11:39,465] multiqc                                            [INFO   ]  Compressing plot data
+[2019-08-06 17:11:39,472] multiqc                                            [INFO   ]  Report      : multiqc_report.html
+[2019-08-06 17:11:39,472] multiqc                                            [INFO   ]  Data        : multiqc_data
+[2019-08-06 17:11:39,473] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp1u98ik1r/multiqc_data/multiqc_cutadapt.txt' to '/data/projects/mdc-971/data_from_June_2019/30.primer_trimmed/multiqc_data'
+[2019-08-06 17:11:39,476] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp1u98ik1r/multiqc_data/mqc_cutadapt_plot_Counts.txt' to '/data/projects/mdc-971/data_from_June_2019/30.primer_trimmed/multiqc_data'
+[2019-08-06 17:11:39,479] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp1u98ik1r/multiqc_data/mqc_cutadapt_plot_Obs_Exp.txt' to '/data/projects/mdc-971/data_from_June_2019/30.primer_trimmed/multiqc_data'
+[2019-08-06 17:11:39,516] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp1u98ik1r/multiqc_data/multiqc_general_stats.txt' to '/data/projects/mdc-971/data_from_June_2019/30.primer_trimmed/multiqc_data'
+[2019-08-06 17:11:39,518] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp1u98ik1r/multiqc_data/multiqc_sources.txt' to '/data/projects/mdc-971/data_from_June_2019/30.primer_trimmed/multiqc_data'
+[2019-08-06 17:11:39,520] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp1u98ik1r/multiqc_data/multiqc_data.json' to '/data/projects/mdc-971/data_from_June_2019/30.primer_trimmed/multiqc_data'
+[2019-08-06 17:11:39,980] multiqc                                            [INFO   ]  MultiQC complete

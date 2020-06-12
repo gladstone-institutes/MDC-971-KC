@@ -1,0 +1,5 @@
+Copy type_lengths from data_June_2019
+
+sed 's/\r//' type_lengths.txt | awk -v OFS='\t' '{print $1, $2, $3, $4, "+"}' > reference.saf
+
+

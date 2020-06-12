@@ -1,0 +1,807 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v1.5.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 96 SAM files                                     ||
+||                           P ./180335_S1_cutadapt.1.fq.dir/Aligned.out.sam  ||
+||                           P ./180336_S2_cutadapt.1.fq.dir/Aligned.out.sam  ||
+||                           P ./180338_S3_cutadapt.1.fq.dir/Aligned.out.sam  ||
+||                           P ./180339_S4_cutadapt.1.fq.dir/Aligned.out.sam  ||
+||                           P ./180340_S5_cutadapt.1.fq.dir/Aligned.out.sam  ||
+||                           P ./180342_S6_cutadapt.1.fq.dir/Aligned.out.sam  ||
+||                           P ./180343_S7_cutadapt.1.fq.dir/Aligned.out.sam  ||
+||                           P ./180344_S8_cutadapt.1.fq.dir/Aligned.out.sam  ||
+||                           P ./180345_S9_cutadapt.1.fq.dir/Aligned.out.sam  ||
+||                           P ./180347_S10_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180348_S11_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180350_S12_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180351_S13_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180352_S14_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180353_S15_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180354_S16_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180355_S17_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180356_S18_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180357_S19_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180358_S20_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180359_S21_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180361_S22_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180362_S23_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180363_S24_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180365_S25_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180366_S26_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180367_S27_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180368_S28_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180369_S29_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180372_S30_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180373_S31_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180375_S32_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180378_S34_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180379_S35_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180381_S36_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180382_S37_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180384_S38_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180388_S39_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180393_S40_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180396_S41_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180397_S42_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180398_S43_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180399_S44_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180403_S45_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           S ./180404_S46_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180405_S47_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           S ./180406_S48_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180407_S49_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180408_S50_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180409_S51_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180412_S52_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180413_S53_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180428_S54_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180429_S55_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180431_S56_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180434_S57_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180437_S58_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180438_S59_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180439_S60_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180440_S61_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180441_S62_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180442_S63_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           S ./180443_S64_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180444_S65_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180445_S67_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180446_S68_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180449_S69_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180451_S70_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180452_S71_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180454_S72_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180456_S73_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180458_S74_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180460_S75_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           S ./180462_S76_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180463_S77_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180464_S78_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180467_S79_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180470_S80_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180472_S81_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180473_S82_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180475_S83_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           S ./180476_S84_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180477_S85_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180478_S86_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180480_S87_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180482_S88_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180487_S89_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180489_S90_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180491_S91_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180493_S92_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180501_S93_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180503_S94_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./180504_S95_cutadapt.1.fq.dir/Aligned.out ... ||
+||                           P ./HeLa_S33_cutadapt.1.fq.dir/Aligned.out.sam   ||
+||                           P ./LKP31_S66_cutadapt.1.fq.dir/Aligned.out.sam  ||
+||                           S ./SiHa_S96_cutadapt.1.fq.dir/Aligned.out.sam   ||
+||                                                                            ||
+||             Output file : ./featureCounts.txt                              ||
+||                 Summary : ./featureCounts.txt.summary                      ||
+||              Annotation : /data/projects/mdc-971/runs/initial_trim_plu ... ||
+||      Dir for temp files : .                                                ||
+||                                                                            ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : no                                               ||
+||         Strand specific : no                                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||       Overlapping bases : 0.0%                                             ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file /data/projects/mdc-971/runs/initial_trim_plus_qc/ ... ||
+||    Features : 202                                                          ||
+||    Meta-features : 202                                                     ||
+||    Chromosomes/contigs : 202                                               ||
+||                                                                            ||
+|| Process SAM file ./180335_S1_cutadapt.1.fq.dir/Aligned.out.sam...          ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 38                                                        ||
+||    Successfully assigned reads : 22 (57.9%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180336_S2_cutadapt.1.fq.dir/Aligned.out.sam...          ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 6546                                                      ||
+||    Successfully assigned reads : 6362 (97.2%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180338_S3_cutadapt.1.fq.dir/Aligned.out.sam...          ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 6732                                                      ||
+||    Successfully assigned reads : 6468 (96.1%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180339_S4_cutadapt.1.fq.dir/Aligned.out.sam...          ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 358                                                       ||
+||    Successfully assigned reads : 342 (95.5%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180340_S5_cutadapt.1.fq.dir/Aligned.out.sam...          ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 2504                                                      ||
+||    Successfully assigned reads : 2450 (97.8%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180342_S6_cutadapt.1.fq.dir/Aligned.out.sam...          ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 76                                                        ||
+||    Successfully assigned reads : 72 (94.7%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180343_S7_cutadapt.1.fq.dir/Aligned.out.sam...          ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 11498                                                     ||
+||    Successfully assigned reads : 11274 (98.1%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180344_S8_cutadapt.1.fq.dir/Aligned.out.sam...          ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 26                                                        ||
+||    Successfully assigned reads : 26 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180345_S9_cutadapt.1.fq.dir/Aligned.out.sam...          ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 7251                                                      ||
+||    Successfully assigned reads : 5485 (75.6%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180347_S10_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 8340                                                      ||
+||    Successfully assigned reads : 8036 (96.4%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180348_S11_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 5257                                                      ||
+||    Successfully assigned reads : 4537 (86.3%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180350_S12_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 52                                                        ||
+||    Successfully assigned reads : 52 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180351_S13_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 12                                                        ||
+||    Successfully assigned reads : 12 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180352_S14_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 2                                                         ||
+||    Successfully assigned reads : 2 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180353_S15_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 48                                                        ||
+||    Successfully assigned reads : 48 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180354_S16_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 58                                                        ||
+||    Successfully assigned reads : 58 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180355_S17_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 708                                                       ||
+||    Successfully assigned reads : 500 (70.6%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180356_S18_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 36                                                        ||
+||    Successfully assigned reads : 36 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180357_S19_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 6                                                         ||
+||    Successfully assigned reads : 6 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180358_S20_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 1302                                                      ||
+||    Successfully assigned reads : 1286 (98.8%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180359_S21_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 6                                                         ||
+||    Successfully assigned reads : 6 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180361_S22_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 8620                                                      ||
+||    Successfully assigned reads : 8500 (98.6%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180362_S23_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 6                                                         ||
+||    Successfully assigned reads : 6 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180363_S24_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 2                                                         ||
+||    Successfully assigned reads : 2 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180365_S25_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 216                                                       ||
+||    Successfully assigned reads : 208 (96.3%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180366_S26_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 8970                                                      ||
+||    Successfully assigned reads : 8762 (97.7%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180367_S27_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 52                                                        ||
+||    Successfully assigned reads : 52 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180368_S28_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 126                                                       ||
+||    Successfully assigned reads : 126 (100.0%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180369_S29_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 70                                                        ||
+||    Successfully assigned reads : 66 (94.3%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180372_S30_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 15040                                                     ||
+||    Successfully assigned reads : 14714 (97.8%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180373_S31_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 14                                                        ||
+||    Successfully assigned reads : 14 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180375_S32_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 124                                                       ||
+||    Successfully assigned reads : 120 (96.8%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180378_S34_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 21904                                                     ||
+||    Successfully assigned reads : 21608 (98.6%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180379_S35_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 6490                                                      ||
+||    Successfully assigned reads : 6356 (97.9%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180381_S36_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 376                                                       ||
+||    Successfully assigned reads : 364 (96.8%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180382_S37_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 9804                                                      ||
+||    Successfully assigned reads : 9518 (97.1%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180384_S38_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 164                                                       ||
+||    Successfully assigned reads : 156 (95.1%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180388_S39_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 2038                                                      ||
+||    Successfully assigned reads : 2038 (100.0%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180393_S40_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 3008                                                      ||
+||    Successfully assigned reads : 2952 (98.1%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180396_S41_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 1242                                                      ||
+||    Successfully assigned reads : 1230 (99.0%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180397_S42_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 20814                                                     ||
+||    Successfully assigned reads : 20274 (97.4%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180398_S43_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 182                                                       ||
+||    Successfully assigned reads : 182 (100.0%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180399_S44_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 526                                                       ||
+||    Successfully assigned reads : 498 (94.7%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180403_S45_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 60                                                        ||
+||    Successfully assigned reads : 56 (93.3%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180404_S46_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Single-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 0                                                         ||
+||    Successfully assigned reads : 0                                         ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180405_S47_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 14                                                        ||
+||    Successfully assigned reads : 14 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180406_S48_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Single-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 0                                                         ||
+||    Successfully assigned reads : 0                                         ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180407_S49_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 176                                                       ||
+||    Successfully assigned reads : 172 (97.7%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180408_S50_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 26730                                                     ||
+||    Successfully assigned reads : 25758 (96.4%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180409_S51_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 948                                                       ||
+||    Successfully assigned reads : 924 (97.5%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180412_S52_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 2000                                                      ||
+||    Successfully assigned reads : 1956 (97.8%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180413_S53_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 17212                                                     ||
+||    Successfully assigned reads : 16936 (98.4%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180428_S54_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 452                                                       ||
+||    Successfully assigned reads : 440 (97.3%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180429_S55_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 3586                                                      ||
+||    Successfully assigned reads : 3514 (98.0%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180431_S56_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 8                                                         ||
+||    Successfully assigned reads : 8 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180434_S57_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 25120                                                     ||
+||    Successfully assigned reads : 24146 (96.1%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180437_S58_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 28                                                        ||
+||    Successfully assigned reads : 28 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180438_S59_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 3873                                                      ||
+||    Successfully assigned reads : 3673 (94.8%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180439_S60_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 4                                                         ||
+||    Successfully assigned reads : 4 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180440_S61_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 20                                                        ||
+||    Successfully assigned reads : 20 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180441_S62_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 18                                                        ||
+||    Successfully assigned reads : 14 (77.8%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180442_S63_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 732                                                       ||
+||    Successfully assigned reads : 728 (99.5%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180443_S64_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Single-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 0                                                         ||
+||    Successfully assigned reads : 0                                         ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180444_S65_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 72                                                        ||
+||    Successfully assigned reads : 68 (94.4%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180445_S67_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 7222                                                      ||
+||    Successfully assigned reads : 7010 (97.1%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180446_S68_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 282                                                       ||
+||    Successfully assigned reads : 282 (100.0%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180449_S69_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 1962                                                      ||
+||    Successfully assigned reads : 1874 (95.5%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180451_S70_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 726                                                       ||
+||    Successfully assigned reads : 718 (98.9%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180452_S71_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 20                                                        ||
+||    Successfully assigned reads : 20 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180454_S72_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 28                                                        ||
+||    Successfully assigned reads : 28 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180456_S73_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 4                                                         ||
+||    Successfully assigned reads : 4 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180458_S74_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 68                                                        ||
+||    Successfully assigned reads : 54 (79.4%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180460_S75_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 20                                                        ||
+||    Successfully assigned reads : 20 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180462_S76_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Single-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 0                                                         ||
+||    Successfully assigned reads : 0                                         ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180463_S77_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 234                                                       ||
+||    Successfully assigned reads : 230 (98.3%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180464_S78_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 20038                                                     ||
+||    Successfully assigned reads : 19690 (98.3%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180467_S79_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 2                                                         ||
+||    Successfully assigned reads : 2 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180470_S80_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 2                                                         ||
+||    Successfully assigned reads : 2 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180472_S81_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 10                                                        ||
+||    Successfully assigned reads : 10 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180473_S82_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 16                                                        ||
+||    Successfully assigned reads : 16 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180475_S83_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 3130                                                      ||
+||    Successfully assigned reads : 3026 (96.7%)                              ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180476_S84_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Single-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 0                                                         ||
+||    Successfully assigned reads : 0                                         ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180477_S85_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 8                                                         ||
+||    Successfully assigned reads : 8 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180478_S86_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 16                                                        ||
+||    Successfully assigned reads : 12 (75.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180480_S87_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 18                                                        ||
+||    Successfully assigned reads : 18 (100.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180482_S88_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 6                                                         ||
+||    Successfully assigned reads : 6 (100.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180487_S89_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 28                                                        ||
+||    Successfully assigned reads : 24 (85.7%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180489_S90_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 130                                                       ||
+||    Successfully assigned reads : 126 (96.9%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180491_S91_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 23580                                                     ||
+||    Successfully assigned reads : 23022 (97.6%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180493_S92_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 1038                                                      ||
+||    Successfully assigned reads : 924 (89.0%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180501_S93_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 16                                                        ||
+||    Successfully assigned reads : 12 (75.0%)                                ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180503_S94_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 222                                                       ||
+||    Successfully assigned reads : 214 (96.4%)                               ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./180504_S95_cutadapt.1.fq.dir/Aligned.out.sam...         ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 10416                                                     ||
+||    Successfully assigned reads : 10196 (97.9%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./HeLa_S33_cutadapt.1.fq.dir/Aligned.out.sam...           ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 14476                                                     ||
+||    Successfully assigned reads : 14338 (99.0%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./LKP31_S66_cutadapt.1.fq.dir/Aligned.out.sam...          ||
+||    Paired-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 27390                                                     ||
+||    Successfully assigned reads : 26898 (98.2%)                             ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process SAM file ./SiHa_S96_cutadapt.1.fq.dir/Aligned.out.sam...           ||
+||    Single-end reads are included.                                          ||
+||    Assign reads to features...                                             ||
+||    Total reads : 0                                                         ||
+||    Successfully assigned reads : 0                                         ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+||                         Read assignment finished.                          ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+

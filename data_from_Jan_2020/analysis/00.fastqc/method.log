@@ -1,0 +1,3 @@
+qplz --ncpus=16 fastqc -t 16 -o . ../../191223_SF017_MDC-UCSF-NGS3/*.gz
+
+
